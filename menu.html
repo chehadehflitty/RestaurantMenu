@@ -1,0 +1,479 @@
+<style>
+  .menu{
+    background-color: red;
+    height: 657px;
+    width: 468px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+  }
+
+  .right{
+    background-color: red;
+    height: 657px;
+    width: 110px;
+    float: right;
+
+  }
+
+  .left{
+    background-color: green;
+    height: 657px;
+    width: 110px;
+    float: left;
+  }
+
+  .p1{
+    position: relative;
+    right: 0px;
+    top: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: auto;
+    width: 40px;
+    background-color: white;
+    z-index: 1;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .p2{
+    position: relative;
+    top: 20px;
+    border-style: solid;
+    font-weight: bold;
+    margin: auto;
+    width: 170px;
+    padding: 5px;
+    font-size: 25px;
+  }
+
+  .p3{
+    position: relative;
+    margin: auto;
+    color: white;
+    background-color: black;
+    width: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13.8px;
+    padding: 3px;
+    top: 17px;
+  }
+
+  .breakfast{
+    position: relative;
+    margin: auto;
+    width: 100px;
+    top: 50px;
+    font-weight: bold;
+  }
+
+  .b1{
+    position: relative;
+    margin: auto;
+    font-size: 10px;
+    width: 170px;
+    top: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .b11{
+    position: relative;
+    margin: auto;
+    font-size: 7px;
+    width: 170px;
+    top: 65px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .b2{
+    position: relative;
+    margin: auto;
+    font-size: 10px;
+    width: 170px;
+    top: 75px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .b22{
+    position: relative;
+    margin: auto;
+    font-size: 7px;
+    width: 170px;
+    top: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .b3{
+    position: relative;
+    margin: auto;
+    font-size: 10px;
+    width: 170px;
+    top: 90px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .b33{
+    position: relative;
+    margin: auto;
+    font-size: 7px;
+    width: 170px;
+    top: 95px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .b4{
+    position: relative;
+    margin: auto;
+    font-size: 10px;
+    width: 170px;
+    top: 105px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .b44{
+    position: relative;
+    margin: auto;
+    font-size: 7px;
+    width: 170px;
+    top: 110px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .lunch{
+    position: relative;
+    margin: auto;
+    width: 70px;
+    top: 120px;
+    font-weight: bold;
+  }
+
+  .l1{
+    position: relative;
+    margin: auto;
+    font-size: 10px;
+    width: 170px;
+    top: 130px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .l11{
+    position: relative;
+    margin: auto;
+    font-size: 7px;
+    width: 170px;
+    top: 135px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .l2{
+    position: relative;
+    margin: auto;
+    font-size: 10px;
+    width: 170px;
+    top: 145px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .l22{
+    position: relative;
+    margin: auto;
+    font-size: 7px;
+    width: 170px;
+    top: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .l3{
+    position: relative;
+    margin: auto;
+    font-size: 10px;
+    width: 170px;
+    top: 160px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .l33{
+    position: relative;
+    margin: auto;
+    font-size: 7px;
+    width: 170px;
+    top: 165px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .l4{
+    position: relative;
+    margin: auto;
+    font-size: 10px;
+    width: 172px;
+    top: 175px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .l44{
+    position: relative;
+    margin: auto;
+    font-size: 7px;
+    width: 170px;
+    top: 180px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .dinner{
+    position: relative;
+    margin: auto;
+    width: 70px;
+    top: 190px;
+    font-weight: bold;
+  }
+
+  .d1{
+    position: relative;
+    margin: auto;
+    font-size: 10px;
+    width: 170px;
+    top: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .d11{
+    position: relative;
+    margin: auto;
+    font-size: 7px;
+    width: 170px;
+    top: 205px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .d2{
+    position: relative;
+    margin: auto;
+    font-size: 10px;
+    width: 170px;
+    top: 215px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .d22{
+    position: relative;
+    margin: auto;
+    font-size: 7px;
+    width: 170px;
+    top: 220px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .d3{
+    position: relative;
+    margin: auto;
+    font-size: 10px;
+    width: 170px;
+    top: 230px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .d33{
+    position: relative;
+    margin: auto;
+    font-size: 7px;
+    width: 170px;
+    top: 235px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .d4{
+    position: relative;
+    margin: auto;
+    font-size: 10px;
+    width: 170px;
+    top: 245px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .d44{
+    position: relative;
+    margin: auto;
+    font-size: 7px;
+    width: 170px;
+    top: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .pr1{
+    position: relative;
+    margin: auto;
+    font-size: 10px;
+    width: 50px;
+    top: -192px;
+    right: -120px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .pr2{
+    position: relative;
+    margin: auto;
+    font-size: 10px;
+    width: 50px;
+    top: -170px;
+    right: -120px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .pr3{
+    position: relative;
+    margin: auto;
+    font-size: 10px;
+    width: 50px;
+    top: -148px;
+    right: -120px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .pr4{
+    position: relative;
+    margin: auto;
+    font-size: 10px;
+    width: 50px;
+    top: -126px;
+    right: -120px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .pr5{
+    position: relative;
+    margin: auto;
+    font-size: 10px;
+    width: 50px;
+    top: -76px;
+    right: -120px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .pr6{
+    position: relative;
+    margin: auto;
+    font-size: 10px;
+    width: 50px;
+    top: -54px;
+    right: -120px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .pr7{
+    position: relative;
+    margin: auto;
+    font-size: 10px;
+    width: 50px;
+    top: -32px;
+    right: -120px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .pr8{
+    position: relative;
+    margin: auto;
+    font-size: 10px;
+    width: 50px;
+    top: -10px;
+    right: -120px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .pr9{
+    position: relative;
+    margin: auto;
+    font-size: 10px;
+    width: 50px;
+    top: 40px;
+    right: -120px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .pr10{
+    position: relative;
+    margin: auto;
+    font-size: 10px;
+    width: 50px;
+    top: 62px;
+    right: -120px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .pr11{
+    position: relative;
+    margin: auto;
+    font-size: 10px;
+    width: 50px;
+    top: 84px;
+    right: -120px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .pr12{
+    position: relative;
+    margin: auto;
+    font-size: 10px;
+    width: 50px;
+    top: 106px;
+    right: -120px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+</style>
+
+<div class="menu">
+  <div class="right">
+
+  </div>
+
+  <div class="left">
+
+  </div>
+
+  <div class="header">
+    <p class="p1">Italian</p>
+    <p class="p2">RESTAURANT</p>
+    <p class="p3">.Delicious Food.</p>
+  </div>
+
+  <p class="breakfast">BREAKFAST</p>
+  <p class="b1">HAM AND EGG</p>
+  <p class="b11">Lorem ipsum dolor sit, consectetuer adipiscing</p>
+  <p class="b2">BACON AND CHEESE</p>
+  <p class="b22">Lorem ipsum dolor sit, consectetuer adipiscing</p>
+  <p class="b3">TUNA SALAD</p>
+  <p class="b33">Lorem ipsum dolor sit, consectetuer adipiscing</p>
+  <P class="b4">BEEF SOUP</P>
+  <p class="b44">Lorem ipsum dolor sit, consectetuer adipiscing</p>
+  <P class="lunch">LUNCH</P>
+  <P class="l1">SPICY BEEF BARBECUE</P>
+  <p class="l11">Lorem ipsum dolor sit, consectetuer adipiscing</p>
+  <P class="l2">PORK BARBECUE</P>
+  <p class="l22">Lorem ipsum dolor sit, consectetuer adipiscing</p>
+  <P class="l3">OVEN CHICKEN BARBECUE</P>
+  <p class="l33">Lorem ipsum dolor sit, consectetuer adipiscing</p>
+  <P class="l4">PULLED BEEF BARBECUE BURGER</P>
+  <p class="l44">Lorem ipsum dolor sit, consectetuer adipiscing</p>
+  <p class="dinner">DINNER</p>
+  <P class="d1">SPICY PORK BARBECUE</P>
+  <p class="d11">Lorem ipsum dolor sit, consectetuer adipiscing</p>
+  <P class="d2">VEGETABLE PORK BARBECUE</P>
+  <p class="d22">Lorem ipsum dolor sit, consectetuer adipiscing</p>
+  <P class="d3">OVEN PORK BARBECUE</P>
+  <p class="d33">Lorem ipsum dolor sit, consectetuer adipiscing</p>
+  <P class="d4">PULLED PORK BARBECUE</P>
+  <p class="d44">Lorem ipsum dolor sit, consectetuer adipiscing</p>
+  <P class="pr1">$ 20</P>
+  <P class="pr2">$ 10</P>
+  <P class="pr3">$ 15</P>
+  <P class="pr4">$ 25</P>
+  <P class="pr5">$ 20</P>
+  <P class="pr6">$ 10</P>
+  <P class="pr7">$ 15</P>
+  <P class="pr8">$ 25</P>
+  <P class="pr9">$ 20</P>
+  <P class="pr10">$ 10</P>
+  <P class="pr11">$ 15</P>
+  <P class="pr12">$ 25</P>
+</div>
